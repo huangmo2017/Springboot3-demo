@@ -1,0 +1,7 @@
+import com.hdm.pojo.FactType
+rule "Example Rule"
+when
+    $fact: FactType()
+then
+    System.out.println("test");
+end
