@@ -2,13 +2,8 @@ package com.hdm.service;
 
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
-import org.kie.internal.io.ResourceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 @Service
 public class RuleService {
@@ -23,7 +18,7 @@ public class RuleService {
          this.kieContainer = kieContainer;
      }
 
-     public void executeRules() {
+     /*public void executeRules() {
          // 获取决策表文件的最后修改时间
          long currentModifiedTime = 0;
          try {
@@ -42,5 +37,5 @@ public class RuleService {
 
          // 执行规则
          kieSession.fireAllRules();
-     }
+     }*/
 }
